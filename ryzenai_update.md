@@ -28,7 +28,6 @@ We install the additions to onnxruntime, the voe (VitisAI onnxruntime execution 
 py -m pip install .\voe-4.0-win_amd64\onnxruntime_vitisai-1.15.1-cp39-cp39-win_amd64.whl
 py -m pip install .\voe-4.0-win_amd64\voe-0.1.0-cp39-cp39-win_amd64.whl
 py -m pip install .\vai_q_onnx-1.16.0+69bc4f2-py2.py3-none-any.whl
-
 ```
 
 The runtime execution provider relies on C APIs that bind to dlls delivered by the AMD NPU driver, these need to be copied to the onnxruntime site-packages directory.
@@ -62,4 +61,12 @@ This will quickly confirm that you are able to interact with the NPU using onnxr
 
 ## Riallto notebooks
 
-The previous 5_1 and 5_2 notebooks should work as before, make sure to delete `modelcachekey` and `resnet.qdq.U8S8.onnx` before running them since these are compilation outputs cached from the previous revision of the tools.
+Update the xclbin and config with the updated RyzenAI-SW 1.1 versions
+
+```
+cp .\voe-4.0-win_amd64\vaip_config.json C:\users\$Env:UserName\AppData\Roaming\riallto_notebooks\onnx\xclbins
+cp .\voe-4.0-win_amd64\1x4.xclbin C:\users\$Env:UserName\AppData\Roaming\riallto_notebooks\onnx\xclbins
+```
+
+The previous 5_1 and 5_2 notebooks should work without edit. If you ran them before, make sure to delete `modelcachekey` and `resnet.qdq.U8S8.onnx` before running them since these are compilation outputs cached from the previous revision of the tools.
+
