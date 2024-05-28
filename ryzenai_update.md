@@ -50,7 +50,7 @@ cd quicktest
 py quicktest.py
 ```
 
-Some of the text might look garbled in powershell, however you should be able to spot a the lines:
+Some of the text might look garbled in powershell, however you should be able to spot the lines:
 
 ```
 [Vitis AI EP] No. of Operators :   CPU     2    IPU   398  99.50%
