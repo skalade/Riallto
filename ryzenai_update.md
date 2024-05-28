@@ -1,6 +1,6 @@
 # RyzenAi-SW 1.1
 
-All of the instructions are to be run from a powershell terminal in the riallto_venv Python virual environment.
+All of the instructions are to be run from a powershell terminal in the riallto_venv Python virtual environment.
 
 ## Uninstall previous ONNX Runtime installation
 
@@ -13,7 +13,7 @@ uninstall_onnx.ps1
 
 ## Download RyzenAI-SW-1.1
 
-To be able to run 5th section Riallto notebooks using ONNX and the VOE execution provider you will have to download the official [RyzenAI-SW-1.1 package)[https://account.amd.com/en/forms/downloads/ryzen-ai-software-platform-xef.html?filename=ryzen-ai-sw-1.1.zip]. Once download extract and navigate to the `ryzen-ai-sw-1.1` directory.
+To upgrade to the latest RyzenAI-SW provided execution provider for ONNX Runtime you will have to download the official [RyzenAI-SW-1.1 package)[https://account.amd.com/en/forms/downloads/ryzen-ai-software-platform-xef.html?filename=ryzen-ai-sw-1.1.zip]. Once downloaded, extract and navigate to the `ryzen-ai-sw-1.1` directory.
 
 ```
 Expand-Archive .\ryzen-ai-sw-1.1.zip
